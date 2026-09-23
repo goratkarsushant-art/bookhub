@@ -1,0 +1,86 @@
+/* ADMIN SIDEBAR - ALL MENU ITEMS LEFT SIDE, ONE BELOW ANOTHER */
+* {
+    box-sizing: border-box;
+}
+
+.layout {
+    display: flex !important;
+    align-items: stretch;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.side {
+    flex: 0 0 240px !important;
+    width: 240px !important;
+    min-width: 240px !important;
+    min-height: 100vh;
+    background: #1e293b;
+    color: #fff;
+    padding: 22px 14px;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+.side-title {
+    display: block;
+    width: 100%;
+    margin: 0 8px 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.side-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100%;
+    gap: 5px;
+}
+
+.side-nav a {
+    display: block !important;
+    width: 100% !important;
+    flex: none !important;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 12px 14px;
+    margin: 0 !important;
+    border-radius: 8px;
+    text-align: left !important;
+    white-space: nowrap;
+}
+
+.side-nav a:hover {
+    background: #334155;
+    transform: translateX(2px);
+}
+
+.side-nav .logout-link {
+    margin-top: 12px !important;
+    background: #dc2626;
+}
+
+.side-nav .logout-link:hover {
+    background: #b91c1c;
+}
+
+.main {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 700px) {
+    .side {
+        flex-basis: 200px !important;
+        width: 200px !important;
+        min-width: 200px !important;
+        padding: 16px 10px;
+    }
+
+    .side-nav a {
+        padding: 10px 11px;
+    }
+}

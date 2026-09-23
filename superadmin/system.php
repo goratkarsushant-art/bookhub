@@ -1,0 +1,2 @@
+<?php require_once '../config.php'; login_required('superadmin'); ?><!doctype html><html><head><title>System</title><link rel="stylesheet" href="../assets/css/superadmin/sidebar.css">
+<link rel="stylesheet" href="../assets/css/superadmin/system.css"></head><body><div class="layout"><?php include 'sidebar.php';?><main class="main"><h1>System Settings</h1><div class="panel"><p>Database: <b>sushant</b></p><p>Roles: Super Admin, Admin, User</p><p>SMTP and OTP: <b>mail_config.php</b></p><p>Fine: ₹10 per late day</p></div></main></div></body></html>

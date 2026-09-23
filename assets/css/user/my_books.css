@@ -1,0 +1,11 @@
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;margin:0;background:#eff6ff;color:#1f2937}
+.layout{display:flex;min-height:100vh;width:100%}
+.main{flex:1;padding:30px;min-width:0}
+h1{margin:0 0 8px;color:#2563eb;font-size:30px}.subtitle{color:#64748b;margin:0 0 22px}
+.panel{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:22px;box-shadow:0 5px 18px #0000000b;overflow:auto}
+table{width:100%;border-collapse:collapse;background:#fff}th{background:#2563eb;color:#fff;text-align:left;padding:12px;white-space:nowrap}td{padding:11px;border-bottom:1px solid #e5e7eb;white-space:nowrap}tr:hover td{background:#eff6ff}
+.success,.error{padding:11px 14px;border-radius:8px;margin:12px 0}.success{background:#dcfce7;color:#166534}.error{background:#fee2e2;color:#991b1b}
+.return-btn{border:0;border-radius:8px;padding:10px 14px;cursor:pointer;background:#2563eb;color:#fff;font-weight:600}.return-btn:hover{filter:brightness(.92)}.returned{color:#15803d;font-weight:600}
+.status{font-weight:600}.status.issued{color:#2563eb}.status.overdue{color:#dc2626}.status.returned{color:#15803d}.empty{text-align:center;padding:35px}.empty a{color:#2563eb;text-decoration:none;font-weight:600}
+@media(max-width:700px){.main{padding:16px}h1{font-size:25px}.side{width:200px;min-width:200px}}
